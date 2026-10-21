@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="bkQPxoNcZ5F8ojZFFIuhTwXyhfmvZ0Q7l9K8ltjmh2Y" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* 顶部宣传图 */
+    .promo-banner {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* App 信息容器 */
+    .app-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* 左侧文字部分 */
+    .app-info {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    .app-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+    }
+
+    .app-text h2 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+    }
+
+    .app-text p {
+      margin: 0;
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* 右侧宣传图 */
+    .app-promo {
+      flex: 1;
+      text-align: center;
+    }
+
+    .app-promo img {
+      width: 300px;   /* 固定宽度 */
+      max-width: 100%; /* 不超过容器 */
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* 手机端优化 */
+    @media (max-width: 768px) {
+      .app-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .app-info {
+        justify-content: center;
+      }
+      .app-text h2 {
+        font-size: 1.2rem;
+      }
+      .app-text p {
+        font-size: 0.95rem;
+      }
+      .app-promo img {
+        width: 100%; /* 手机端铺满 */
+      }
+    }
+
+    /* 反馈区域 */
+    .feedback-section {
+      max-width: 1100px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .feedback-title {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+
+    .feedback-text {
+      margin: 0 0 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: #111827;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    .contact-button:hover {
+      background: #0b1220;
+    }
+
+    .contact-email {
+      margin: 10px 0 0;
+      color: #6b7280;
+      font-size: 0.95rem;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 顶部宣传图 -->
+  <img src="images/pic.jpg" alt="宣传图" class="promo-banner">
+
+  <!-- App 1 -->
+  <div class="app-section">
+    <div class="app-info">
+      <img src="images/logo.png" alt="App1图标" class="app-icon">
+      <div class="app-text">
+        <h2>Nut Pusher:Bolt Puzzle</h2>
+        <p>Nut Pusher is a cozy box-pushing logic puzzle with a hercyou'll love: a little screw with a big smile. On a warm wooden workbench walled in
+by riveted steel, your job is to push every nut onto a bolt.Each one spins down and locks into place with a satisfyinclick.</p>
+      </div>
+    </div>
+    <div class="app-promo">
+      <img src="images/info.png" alt="App1宣传图">
+    </div>
+  </div>
+
+  <!-- 反馈区域 -->
+  <div class="feedback-section" aria-label="反馈与联系">
+    <h3 class="feedback-title">Feedback</h3>
+    <p class="feedback-text">
+      If you run into any issues or have suggestions, feel free to reach out. We’ll get back to you as soon as possible.
+    </p>
+    <a class="contact-button" href="mailto:JoelWyatt6697@icloud.com?subject=Website%20Feedback">
+      Contact us
+    </a>
+    <p class="contact-email">Email: JoelWyatt6697@icloud.com</p>
+  </div>
+
+</body>
+</html>
